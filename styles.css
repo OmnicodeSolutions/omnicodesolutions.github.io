@@ -1,0 +1,53 @@
+body {
+  background: linear-gradient(to bottom, #ffe6be, #9013fe);
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+
+main {
+  animation: fadein 2s;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  max-height: 80px;
+  max-width: 100%;
+}
+
+.links {
+  list-style: none;
+  margin: 0;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.links li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.links a {
+  color: rgba(255, 255, 255, .8);
+  text-decoration: none;
+}
+
+.links a:hover,
+.links a:focus {
+  color: white;
+}
+
+.links a:focus {
+  outline: 1px dotted;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
