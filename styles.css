@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to bottom, #7273BD, #5C5C70);
+  background-color: #7D8A2E;
   font-family: Arial, sans-serif;
   height: 100%;
 }
@@ -13,14 +13,14 @@ main {
 }
 
 .logo {
-  max-height: 80px;
+  max-height: 400px;
   max-width: 100%;
 }
 
 .links {
   list-style: none;
   margin: 0;
-  padding: 40px 0;
+  padding: 5px 0;
   text-align: center;
 }
 
