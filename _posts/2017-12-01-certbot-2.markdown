@@ -1,0 +1,4 @@
+---
+layout: certbot
+permalink: /.well-known/acme-challenge/xIDsrV8pDTDd-EC6WPiCh2_kAFJzVGVvtNVqLj4szeA
+---
