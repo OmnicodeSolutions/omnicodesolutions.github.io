@@ -1,11 +1,16 @@
+:root {
+  --omni-green: #3c4421;
+  --omni-secondary: #585f40;
+}
+
 body {
-  background-color: #7D8A2E;
+  background-color: #fff;
   font-family: Arial, sans-serif;
   height: 100%;
+  color: var(--omni-green);
 }
 
 main {
-  animation: fadein 2s;
   left: 50%;
   position: absolute;
   top: 50%;
@@ -13,8 +18,23 @@ main {
 }
 
 .logo {
-  max-height: 400px;
+  height: 50vmin;
   max-width: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: logo-spin infinite 60s linear;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .links {
@@ -22,6 +42,7 @@ main {
   margin: 0;
   padding: 5px 0;
   text-align: center;
+  height: 10vmin;
 }
 
 .links li {
@@ -30,13 +51,12 @@ main {
 }
 
 .links a {
-  color: rgba(255, 255, 255, .8);
   text-decoration: none;
 }
 
 .links a:hover,
 .links a:focus {
-  color: white;
+  color: var(--omni-secondary);
 }
 
 .links a:focus {
